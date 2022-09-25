@@ -7,10 +7,18 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net46'">
-    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
-    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
-    <PackageReference Include="System.Memory" Version="4.5.5" />
-  </ItemGroup>
+  <!-- NuGet -->
+  <PropertyGroup>
+    <PackageId>Benutomo.DataBindings</PackageId>
+    <Description>A data binding library.</Description>
+    <PackageVersion>1.0.0-alpha1</PackageVersion>
+    <Authors>benutomo</Authors>
+    <Copyright>© benutomo.</Copyright>
+    <PackageTags>databinding</PackageTags>
+    <PackageProjectUrl>https://github.com/benutomo-dev/DataBindings</PackageProjectUrl>
+    <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
 
 </Project>
